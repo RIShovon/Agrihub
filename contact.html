@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Experts - Agricultural Information Hub</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      <!-- custom css -->
+     <link rel="stylesheet" href="styels.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-tractor me-2"></i>AgriHub
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="farming-guides.html">Farming Guides</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="crop-details.html">Crop Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pest-control.html">Pest Control</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact Experts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Contact Agricultural Experts</h1>
+            <p class="lead">Get personalized advice and solutions from our team of agricultural specialists</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Introduction -->
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p>Our team of agricultural experts is here to help you with any farming challenges you're facing. Whether you need advice on crop management, pest control, or general farming practices, we're just a message away.</p>
+                </div>
+            </div>
+
+            <!-- Contact Methods -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="section-title">How to Reach Us</h2>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="contact-method">
+                        <i class="fas fa-envelope fa-3x text-primary mb-3"></i>
+                        <h5>Email Us</h5>
+                        <p>Send detailed questions with photos for comprehensive advice</p>
+                        <p class="fw-bold">info@agrihub.com</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="contact-method">
+                        <i class="fas fa-phone fa-3x text-primary mb-3"></i>
+                        <h5>Call Us</h5>
+                        <p>Speak directly with our agricultural specialists during business hours</p>
+                        <p class="fw-bold">+1 (555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="contact-method">
+                        <i class="fas fa-map-marker-alt fa-3x text-primary mb-3"></i>
+                        <h5>Visit Us</h5>
+                        <p>Schedule an appointment for in-person consultation at our office</p>
+                        <p class="fw-bold">123 Farm Road, Agriculture City</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form & Information -->
+            <div class="row">
+                <div class="col-lg-8 mb-5">
+                    <div class="contact-form">
+                        <h3 class="section-title">Send Your Inquiry</h3>
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="expertise" class="form-label">Area of Expertise Needed</label>
+                                <select class="form-select" id="expertise">
+                                    <option value="">Select an area</option>
+                                    <option value="crop-management">Crop Management</option>
+                                    <option value="pest-control">Pest Control</option>
+                                    <option value="soil-health">Soil Health</option>
+                                    <option value="irrigation">Irrigation Systems</option>
+                                    <option value="organic-farming">Organic Farming</option>
+                                    <option value="equipment">Farm Equipment</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Your Message *</label>
+                                <textarea class="form-control" id="message" rows="5" required placeholder="Please describe your issue or question in detail..."></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Attachment (Optional)</label>
+                                <div class="file-upload">
+                                    <button type="button" class="file-upload-btn">
+                                        <i class="fas fa-paperclip me-2"></i>Choose File
+                                    </button>
+                                    <input type="file" id="attachment">
+                                </div>
+                                <small class="form-text text-muted">You can upload images of affected crops, soil samples, or relevant documents (Max: 5MB)</small>
+                            </div>
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" id="newsletter">
+                                <label class="form-check-label" for="newsletter">
+                                    Subscribe to our agricultural newsletter for tips and updates
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg w-100">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="contact-info-card">
+                        <h3 class="text-white mb-4">Contact Information</h3>
+                        <div class="mb-4">
+                            <h5><i class="fas fa-clock me-2"></i>Business Hours</h5>
+                            <p>Monday - Friday: 8:00 AM - 6:00 PM<br>
+                               Saturday: 9:00 AM - 2:00 PM<br>
+                               Sunday: Closed</p>
+                        </div>
+                        <div class="mb-4">
+                            <h5><i class="fas fa-envelope me-2"></i>Email</h5>
+                            <p>info@agrihub.com<br>
+                               support@agrihub.com</p>
+                        </div>
+                        <div class="mb-4">
+                            <h5><i class="fas fa-phone me-2"></i>Phone</h5>
+                            <p>+1 (555) 123-4567<br>
+                               +1 (555) 123-4568 (Emergency)</p>
+                        </div>
+                        <div class="mb-4">
+                            <h5><i class="fas fa-map-marker-alt me-2"></i>Address</h5>
+                            <p>123 Farm Road<br>
+                               Agriculture City, AC 12345<br>
+                               United States</p>
+                        </div>
+                        <div class="social-links text-center mt-4">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Agricultural Experts -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h2 class="section-title">Our Agricultural Experts</h2>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="expert-card">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             alt="Dr. Sarah Johnson" class="expert-image">
+                        <h4>Dr. Sarah Johnson</h4>
+                        <p class="text-muted">Senior Agronomist</p>
+                        <div class="mb-3">
+                            <span class="specialty-badge">Soil Science</span>
+                            <span class="specialty-badge">Crop Nutrition</span>
+                        </div>
+                        <p>15+ years experience in soil health and sustainable farming practices.</p>
+                        <p class="fw-bold">s.johnson@agrihub.com</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="expert-card">
+                        <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             alt="Michael Chen" class="expert-image">
+                        <h4>Michael Chen</h4>
+                        <p class="text-muted">Plant Pathologist</p>
+                        <div class="mb-3">
+                            <span class="specialty-badge">Disease Management</span>
+                            <span class="specialty-badge">IPM Specialist</span>
+                        </div>
+                        <p>Expert in plant diseases and integrated pest management strategies.</p>
+                        <p class="fw-bold">m.chen@agrihub.com</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="expert-card">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             alt="Dr. Maria Rodriguez" class="expert-image">
+                        <h4>Dr. Maria Rodriguez</h4>
+                        <p class="text-muted">Horticulture Specialist</p>
+                        <div class="mb-3">
+                            <span class="specialty-badge">Organic Farming</span>
+                            <span class="specialty-badge">Greenhouse Management</span>
+                        </div>
+                        <p>Specialized in organic farming methods and greenhouse technologies.</p>
+                        <p class="fw-bold">m.rodriguez@agrihub.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                </div>
+                <div class="col-lg-8 mx-auto">
+                    <div class="faq-item">
+                        <h5>How quickly can I expect a response to my inquiry?</h5>
+                        <p>We typically respond within 24-48 hours during business days. For urgent matters, please call our emergency line.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h5>Is there a cost for consulting with your experts?</h5>
+                        <p>Basic consultations are free. For extensive on-site visits or detailed analysis, there may be a nominal fee which will be discussed upfront.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h5>Can you help with specific crop diseases?</h5>
+                        <p>Yes, our plant pathologists can help identify diseases and recommend treatment plans. Please include clear photos with your inquiry.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h5>Do you provide soil testing services?</h5>
+                        <p>We offer soil testing and analysis. You can either visit our lab or mail us soil samples following our collection guidelines.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h5>Are your services available to farmers outside the local area?</h5>
+                        <p>Yes, we provide remote consultations via video call, email, and phone for farmers anywhere in the country.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Agricultural Information Hub</h5>
+                    <p>Your trusted resource for farming knowledge and expert advice.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="farming-guides.html" class="text-white">Farming Guides</a></li>
+                        <li><a href="crop-details.html" class="text-white">Crop Details</a></li>
+                        <li><a href="pest-control.html" class="text-white">Pest Control</a></li>
+                        <li><a href="contact.html" class="text-white">Contact Experts</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p><i class="fas fa-envelope me-2"></i> info@agrihub.com</p>
+                    <p><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> 123 Farm Road, Agriculture City</p>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center">
+                <p>&copy; 2023 Agricultural Information Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Contact Form Script -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simple form validation
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && message) {
+                // Show success message (in a real application, you would send data to a server)
+                alert('Thank you for your message! Our agricultural experts will get back to you within 24-48 hours.');
+                document.getElementById('contactForm').reset();
+            } else {
+                alert('Please fill in all required fields.');
+            }
+        });
+        
+        // File upload button text update
+        document.getElementById('attachment').addEventListener('change', function(e) {
+            const fileName = e.target.files[0] ? e.target.files[0].name : 'Choose File';
+            document.querySelector('.file-upload-btn').innerHTML = `<i class="fas fa-paperclip me-2"></i>${fileName}`;
+        });
+    </script>
+</body>
+</html>
